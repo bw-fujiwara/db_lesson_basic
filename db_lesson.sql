@@ -7,7 +7,7 @@ Q1
     -> );
 
 Q2
-ALTER TABLE people ADD depatment_id INT unsigned ;
+ALTER TABLE people ADD depatment_id INT unsigned AFTER email;
 
 Q3
 INSERT INTO departments (name)
@@ -20,16 +20,16 @@ INSERT INTO departments (name)
 
 INSERT INTO people (department_id, name, email, age, gender)
   　-> VALUES
-    ->  (1, '山田', NULL, 21, 1),
-    ->  (1, '佐藤', NULL, 22, 2),
-    ->  (1, '太田', NULL, 23, 1),
-    ->  (2, '斎藤', NULL, 24, 2),
-    ->  (2, '田口', NULL, 25, 1),
-    ->  (2, '葉山', NULL, 26, 2),
-    ->  (2, '笹原', NULL, 27, 1),
-    ->  (3, '坂口', NULL, 28, 2),
-    ->  (4, '星野', NULL, 29, 1),
-    ->  (5, '花山', NULL, 30, 2);
+    ->  (1, '山田', yamada@beyond-works.co.jp, 21, 1),
+    ->  (1, '佐藤', satou@beyond-works.co.jp, 22, 2),
+    ->  (1, '太田', ohta@beyond-works.co.jp, 23, 1),
+    ->  (2, '斎藤', saitou@beyond-works.co.jp, 24, 2),
+    ->  (2, '田口', taguchi@beyond-works.co.jp, 25, 1),
+    ->  (2, '葉山', hayama@beyond-works.co.jp, 26, 2),
+    ->  (2, '笹原', sasahara@beyond-works.co.jp, 27, 1),
+    ->  (3, '坂口', sakaguchi@beyond-works.co.jp, 28, 2),
+    ->  (4, '星野', hoshino@beyond-works.co.jp, 29, 1),
+    ->  (5, '花山', hanayama@beyond-works.co.jp, 30, 2);
 
 INSERT INTO reports (person_id, content)
     -> VALUES
